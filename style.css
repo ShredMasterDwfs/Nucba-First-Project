@@ -1,0 +1,313 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url("SoundCloud.jpg");
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    height: 40px;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    background: #ff4301;
+}
+
+.navbar__container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar__container a {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    background: #4a3f35;
+}
+
+.portada {
+    background: url("portada.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.lista-productos {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.newCard {
+    background: white;
+    border-radius: 10px 10px;
+    box-shadow: 2px 2px gray;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newCard img {
+    width: 170px;
+    height: 170px;
+    margin: 10px 10px;
+    border-radius: 10px 10px;
+}
+
+article {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+    padding: 15px;
+    margin: 10px;
+}
+
+p {
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+}
+
+button {
+    background: #fa7d09;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 10px 10px;
+    border: none;
+    padding: 5px 10px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.lista-filtros {
+    width: 100%;
+    height: 300px;
+}
+
+.navbar__container a:hover {
+    opacity: 1;
+    background: #fa7d09;
+}
+
+.secciones a:hover, .redes li:hover {
+    opacity: 0.5;
+}
+
+#lista-lubricantes .lista-productos img {
+    width: 300px;
+    height: 150px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 25px;
+}
+
+li img:hover {
+    transform: scale(1.05,1.05);
+}
+
+img[src="logo.png"] {
+    border-radius: 75% 75%;
+    width: 270px;
+    height: 117px;
+    padding: 10px;
+}
+
+.contacto {
+    color: white;
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+h4 {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.lista-secciones {
+    padding: 0;
+}
+
+.secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.secciones a {
+    text-decoration: none;
+    color: white;
+}
+
+.fiscal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-ubicacion {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.lista-ubicacion ion-icon {
+    width: 20px;
+    height: 20px;
+}
+
+li p {
+    display: inline;
+    align-items: center;
+    font-size: 11px;
+}
+.redes li {
+    list-style: none;
+    margin: 0;
+}
+
+#instagram {
+    margin: 0 20px;
+}
+
+ion-icon {
+    width: 25px;
+    height: 25px;
+}
+
+#afip {
+    width: 80px;
+    height: 120px;
+    position: relative;
+    margin-top: 20px;
+}
+
+input {
+    width: 350px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#enviar {
+    background: #ff4301;
+    color: white;
+    border-radius: 10px 10px;
+    padding: 10px;
+    width: 365px;
+}
+
+#mensaje {
+    width: 350px;
+    height: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar__container {
+        display: block;
+    }
+
+    .navbar__container li {
+        height: 100%;
+        width: 100%;
+        background: #2f2519;
+    }
+
+    .lista-productos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container {
+        height: 200px;
+    }
+
+    img[src="logo.png"] {
+        transform: scale(0.5);
+        padding: 0;
+    }   
+
+    h1 {
+        font-size: 25px;
+    }
+
+    article {
+        font-size: 15px;
+    }
+
+    .redes {
+        display: block;  
+    }
+
+    #instagram {
+        margin: 0;
+    }
+
+}
