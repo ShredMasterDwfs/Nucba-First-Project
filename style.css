@@ -314,4 +314,8 @@ input {
         margin: 0;
     }
 
+    .footer h4, .footer ul, footer li {
+	transform: scale(0.8);
+    }
+
 }
