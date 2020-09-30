@@ -23,6 +23,7 @@ nav label {
     width: 35px;
     height: 35px;
     line-height: 35px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     user-select: none;
