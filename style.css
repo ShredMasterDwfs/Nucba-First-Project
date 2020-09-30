@@ -387,7 +387,9 @@ input {
     }
 
     img[src="logo.png"] {
-        transform: scale(0.5);
+        width: 135px;
+        height: 58.5px;
+        transform: translateX(5px) translateY(35px);
         padding: 6px;
         margin: 0;
     }   
