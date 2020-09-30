@@ -8,25 +8,29 @@
 
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <ul class="navbar__container">
-                <li id="home"><a href="#">Home</a></li>
-                <li><a href="#about">La Empresa</a></li>
-                <li><a href="#lubricantes">Lubricantes</a></li>
-                <li><a href="#filtros">Filtros </a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li id="login">
-                    <a href="login.html"><ion-icon name="log-out-outline"></ion-icon>Login</a>
-                    <a href="register.html"><ion-icon name="person-add-outline"></ion-icon>Register</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="portada">
+        <img src="logo.png">
+        <div class="container">
+            <nav class="navbar">
+            <input type="checkbox" id="menu">
+            <label for="menu"><ion-icon name="menu-outline"></ion-icon></label>
+                <ul class="navbar__container">
+                    <li id="home"><a href="#">Home</a></li>
+                    <li><a href="#about">La Empresa</a></li>
+                    <li><a href="#lubricantes">Lubricantes</a></li>
+                    <li><a href="#filtros">Filtros </a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li id="login">
+                        <a href="login.html"><ion-icon name="log-out-outline"></ion-icon>Login</a>
+                        <a href="register.html"><ion-icon name="person-add-outline"></ion-icon>Register</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
      </div>
-     
-     <div class="portada">
+     <!--<div class="portada">
             <img src="logo.png">
-     </div>
+     </div>-->
 
      <div class="contacto">
         <h1 id="about">La Empresa</h1>
@@ -124,8 +128,8 @@
             <label>Email</label>
             <input type="email" id="email">
             <label>Mensaje</label>
-            <input type="textarea" id="mensaje">
-            <input type="submit" id="enviar" name="enviar">
+            <textarea id="mensaje" placeholder="Ingrese aquí su consulta..."></textarea>
+            <button id="enviar" name="enviar">Enviar</button>
         </div>
      </div>
 
@@ -135,7 +139,7 @@
                 <h4>REDES</h4>
                 <ul class="redes">
                     <li><ion-icon name="logo-facebook"></ion-icon></li>
-                    <li id="instagram"><ion-icon name="logo-instagram"></ion-icon></li>
+                    <li id="instagram"><a href="https://www.instagram.com/dinsa_argentina/?hl=es-la"><ion-icon name="logo-instagram" ></ion-icon></a></li>
                     <li><ion-icon name="logo-twitter"></ion-icon></li>
                 </ul>
             </div>
@@ -145,7 +149,7 @@
                 <ul class="lista-secciones">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">La Empresa</a></li>
-                    <li><a href="#">Lubricantes</a></li>
+                    <li><a href="#lubricantes">Lubricantes</a></li>
                     <li><a href="#filtros">Filtros</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>

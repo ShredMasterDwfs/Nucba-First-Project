@@ -9,11 +9,31 @@ html, body {
     scroll-behavior: smooth;
 }
 
+input[type="checkbox"] {
+    display: none;   
+    position: relative;
+}
+
+nav label {
+    position: absolute;
+    box-sizing: border-box;
+    display: inline-block;
+    border: none;
+    color: white;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    visibility: hidden;
+}
+
 .container {
     width: 100%;
     height: 30px;
     position: relative;
-    z-index: 1;
+    z-index: 20;
 }
 
 .navbar {
@@ -73,6 +93,7 @@ li {
     background: url("portada.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 400px;
 }
@@ -147,6 +168,10 @@ button:hover {
     height: 300px;
 }
 
+.contacto button {
+    margin-top: 20px;
+}
+
 .navbar__container a:hover {
     opacity: 1;
     background: #fa7d09;
@@ -175,7 +200,7 @@ img[src="logo.png"] {
     border-radius: 75% 75%;
     width: 270px;
     height: 117px;
-    padding: 10px;
+    padding: 40px 10px;
     position: absolute;
     z-index: 0;
 }
@@ -187,6 +212,20 @@ img[src="logo.png"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.contacto input, textarea {
+    border-radius: 8px;
+    border: none;
+    padding-left: 10px;
+}
+
+.contacto textarea {
+    width: 300px;
+    padding-left: 10px;
+    margin-top: 10px;
+    resize: none;
+    padding-top: 10px;
 }
 
 .footer {
@@ -273,7 +312,12 @@ li p {
     margin: 0 20px;
 }
 
-ion-icon {
+.redes a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.redes ion-icon {
     width: 25px;
     height: 25px;
 }
@@ -304,7 +348,7 @@ input {
     height: 200px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 
     .navbar__container li {
         height: 100%;
@@ -312,9 +356,26 @@ input {
         background: #2f2519;
     }
 
-    .navbar__container {
-        display: block;
+    .container ul {
+        display: none;
     }
+
+    input:checked  ~ .navbar__container {
+        display:block;
+    }
+
+    nav label {
+        visibility: visible;
+        position: relative;
+    }
+
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    /*.navbar__container {
+        display: block;
+    }*/
 
     .lista-productos {
         flex-direction: column;
@@ -326,7 +387,8 @@ input {
 
     img[src="logo.png"] {
         transform: scale(0.5);
-        padding: 0;
+        padding: 6px;
+        margin: 0;
     }   
 
     h1 {
@@ -347,6 +409,12 @@ input {
 
     .footer h4, .footer ul, footer li {
 	transform: scale(0.8);
+    }
+
+    .container input {
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
     }
 
 }
