@@ -349,7 +349,7 @@ input {
     height: 200px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 
     .navbar__container li {
         height: 100%;
@@ -373,10 +373,6 @@ input {
     .navbar {
         background-color: rgba(0, 0, 0, 0.1);
     }
-
-    /*.navbar__container {
-        display: block;
-    }*/
 
     .lista-productos {
         flex-direction: column;
@@ -414,9 +410,9 @@ input {
 	transform: scale(0.8);
     }
 
-    .container input {
-        padding-left: 30px;
-        padding-right: 30px;
+    .contacto input, .contacto textarea, .contacto button {
+        margin-left: 60px;
+        margin-right: 60px;
         box-sizing: border-box;
     }
 
